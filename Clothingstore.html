@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Wear • Catalogue</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f6f6f6;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            border-left: 5px solid #4ca1af;
+            padding-left: 10px;
+            color: #444;
+            margin-bottom: 1rem;
+        }
+
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            margin: 0.5rem 0;
+            color: #222;
+        }
+
+        .product-info p {
+            color: #e67e22;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .product-info a {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #4ca1af;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 3rem auto;
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 1rem;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.3rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: 0.9rem 1.5rem;
+            background: #4ca1af;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3c8fa0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Urban Wear</h1>
+        <p>Modern. Stylish. Affordable.</p>
+    </header>
+
+    <nav>
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+        <a href="#kids">Kids</a>
+        <a href="#form">Enquire</a>
+    </nav>
+
+    <!-- Men's Section -->
+    <section id="men" class="section">
+        <h2>👔 Men's Collection</h2>
+        <div class="catalog">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80"
+                    alt="Casual Shirt">
+                <div class="product-info">
+                    <h3>Casual T‑Shirt</h3>
+                    <p>₹799</p>
+                    <a href="#form">Enquire Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTcaPzunKlwfqC0bEKIZWfPz3aydhApzy0rAZ6MQFz2j9mOGPuc5cAz81c5oBgGks7FtKJfx6-foiGQsxSIBvL051ij66cHATlHo58gZ-PSaORH5YVhYXtC"
+                    alt="Blue T-Shirt">
+                <div class="product-info">
+                    <h3>Blue T‑Shirt</h3>
+                    <p>₹899</p>
+                    <a href="#form">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women's Section -->
+    <section id="women" class="section">
+        <h2>👗 Women's Collection</h2>
+        <div class="catalog">
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/kurta/a/9/q/s-pink-carry-notch-neck-prisca-original-imah4uwfhxex2ph5.jpeg?q=70&crop=false"
+                    alt="Printed Kurti">
+                <div class="product-info">
+                    <h3>Printed Kurti</h3>
+                    <p>₹699</p>
+                    <a href="#form">Enquire Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/23rd_Aug_Virgio2161.jpg?v=1725021051&width=960&crop=center"
+                    alt="Denim Jacket">
+                <div class="product-info">
+                    <h3>Denim Jacket</h3>
+                    <p>₹999</p>
+                    <a href="#form">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kids' Section -->
+    <section id="kids" class="section">
+        <h2>🧒 Kids' Collection</h2>
+        <div class="catalog">
+            <div class="product">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/27651332/2024/2/17/fce8bd77-9210-44c6-8974-a2c1c89a106f1708112060983KidsvilleMinecraftPrintedRegularFitTshirtForBoys1.jpg"
+                    alt="Kids T-Shirt">
+                <div class="product-info">
+                    <h3>Kids T‑Shirt</h3>
+                    <p>₹399</p>
+                    <a href="#form">Enquire Now</a>
+                </div>
+            </div>
+            <div class="https://i.etsystatic.com/18112712/r/il/ae04d0/1997147549/il_570xN.1997147549_p1au.jpg"
+                    alt="Kids Shorts">
+                <div class="product-info">
+                    <h3>Kids Shorts</h3>
+                    <p>₹499</p>
+                    <a href="#form">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Form -->
+    <section id="form" class="section">
+        <h2>📩 Product Enquiry Form</h2>
+        <form action="https://formspree.io/f/xblyneak" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Customer Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Customer Email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="Customer Phone" required>
+
+            <label for="category">Product Category:</label>
+            <select id="category" name="Product Category">
+                <option value="Men">Men</option>
+                <option value="Women">Women</option>
+                <option value="Kids">Kids</option>
+            </select>
+
+            <label for="product">Product Name:</label>
+            <input type="text" id="product" name="Product Name" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="Message" rows="4"></textarea>
+
+            <button type="submit">Send Enquiry</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
